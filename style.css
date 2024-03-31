@@ -1,25 +1,61 @@
 body {
-	# background-color: #FFF;
+	padding-top: 20px;
 	font-family: "Lazara";
 	font-size: 20px;
-	margin-left: 50px;
 }
 
 .container {
-	padding: 20px;
-	border-radius: 10px;
-	# box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 100%;
 	display: flex;
-	flex-direction: column;
-	align-items: left;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
-.header-image {
-	margin-bottom: 5px;
+.profile-pic-container {
+	display: flex;
+	width:30%;
+	align-items: center;
+	justify-content: center;
 }
 
-.header-image img {
+.profile-pic {
+	max-width: 100%;
 	border-radius: 50%;
-	width: 150px; /* Adjust size as needed */
-	height: 150px; /* Adjust size as needed */
+	margin: auto;
+}
+
+.about-me-container {
+	width: 70%;
+}
+
+.about-me {
+	padding: 1rem;
+}
+
+.navbar {
+  color: blue;          /* White text */
+  position: fixed;       /* Make nav stick to the top */
+  top: 0;
+  width: 100%;           /* Full width */
+  z-index:1;
+}
+
+.nav-list {
+  list-style: none;   /* Remove bullet points */
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+}
+
+.nav-item { 
+  display: inline;    /* Arrange buttons horizontally */
+  margin-right: 20px; /* Space between buttons */
+}
+
+.nav-button {
+  background-color: transparent; 
+  border: none;
+  color: black;
+  padding: 10px 20px;  /* Button size */
+  cursor: pointer;     /* Indicate clickability */
 }
