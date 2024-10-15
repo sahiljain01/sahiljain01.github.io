@@ -1,61 +1,61 @@
 body {
-	padding-top: 20px;
-	font-family: "Lazara";
-	font-size: 20px;
+  padding-top: 20px;
+  font-family: "Lazara";
+  font-size: 20px;
 }
 
 .container {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .profile-pic-container {
-	display: flex;
-	width:30%;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-pic {
-	max-width: 100%;
-	border-radius: 50%;
-	margin: auto;
+  max-width: 100%;
+  border-radius: 50%;
+  margin: auto;
 }
 
 .about-me-container {
-	width: 70%;
+  width: 70%;
 }
 
 .about-me {
-	padding: 1rem;
+  padding: 1rem;
 }
 
 .navbar {
-  color: blue;          /* White text */
-  position: fixed;       /* Make nav stick to the top */
+  color: blue; /* White text */
+  position: fixed; /* Make nav stick to the top */
   top: 0;
-  width: 100%;           /* Full width */
-  z-index:1;
+  width: 100%; /* Full width */
+  z-index: 1;
 }
 
 .nav-list {
-  list-style: none;   /* Remove bullet points */
-  margin: 0; 
+  list-style: none; /* Remove bullet points */
+  margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.nav-item { 
-  display: inline;    /* Arrange buttons horizontally */
+.nav-item {
+  display: inline; /* Arrange buttons horizontally */
   margin-right: 20px; /* Space between buttons */
 }
 
 .nav-button {
-  background-color: transparent; 
+  background-color: transparent;
   border: none;
   color: black;
-  padding: 10px 20px;  /* Button size */
-  cursor: pointer;     /* Indicate clickability */
+  padding: 10px 20px; /* Button size */
+  cursor: pointer; /* Indicate clickability */
 }
