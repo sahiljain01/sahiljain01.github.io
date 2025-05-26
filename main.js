@@ -1,18 +1,27 @@
-function matchImageHeightToText() {
-  const textElement = document.getElementById('about-me'); // Get the text element
-  const imageElement = document.getElementById('profile-pic'); // Get the image element
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize typewriter for the name
+    const nameTypewriter = new Typewriter('#typing-text', {
+        loop: false,
+        delay: 25,
+        cursor: '|'
+    });
 
-  // Get the EXACT height of the text block
-  const textHeight = textElement.offsetHeight; 
+    // Initialize typewriter for the subtitle
+    const subtitleTypewriter = new Typewriter('#subtitle-text', {
+        loop: false,
+        delay: 17,
+        cursor: ''
+    });
 
-  console.warn(textHeight);
-  // Apply the height to the image
-  imageElement.style.height = textHeight + "px";  
-}
+    // Start the typing animations
+    nameTypewriter
+        .typeString('Sahil')
+        .start();
 
-// Call on page Load
-window.onload = matchImageHeightToText;
-
-// Recalculate on window resize if text lines may change 
-window.onresize = matchImageHeightToText; 
-
+    // Start subtitle typing after a short delay
+    setTimeout(() => {
+        subtitleTypewriter
+            .typeString("I love building software and drinking ☕. But that's probably not why you're here. I'm currently working on Optimus (Tesla's Humanoid 🤖) with the Tesla AI team. Prior to that, I was a quant at Citadel, where I wrote algorithms to trade foreign exchange currencies. I studied computer science at Princeton 🐅.")
+            .start();
+    }, 333);
+});
