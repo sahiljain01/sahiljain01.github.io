@@ -1,0 +1,17 @@
+title: Sahil Jain
+description: Building humanoid robot brains @ Tesla AI
+url: "https://sahiljain01.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:title/
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - CLAUDE.md

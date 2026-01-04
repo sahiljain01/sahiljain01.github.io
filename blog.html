@@ -1,0 +1,26 @@
+---
+layout: default
+title: Blog - Sahil Jain
+description: Thoughts on AI, robotics, and building things
+---
+<div class="blog-container">
+  <a href="{{ '/' | relative_url }}" class="back-link"><i class="fas fa-arrow-left"></i> Back</a>
+  <h1 class="blog-title">Blog</h1>
+  <p class="blog-subtitle">Thoughts on AI, robotics, and building things</p>
+
+  <div class="post-list">
+    {% for post in site.posts %}
+    <a href="{{ post.url | relative_url }}" class="post-item">
+      <h2 class="post-item-title">{{ post.title }}</h2>
+      <p class="post-item-date">{{ post.date | date: "%B %d, %Y" }}</p>
+      {% if post.description %}
+      <p class="post-item-description">{{ post.description }}</p>
+      {% endif %}
+    </a>
+    {% endfor %}
+
+    {% if site.posts.size == 0 %}
+    <p class="no-posts">No posts yet. Check back soon!</p>
+    {% endif %}
+  </div>
+</div>

@@ -1,42 +1,36 @@
-<!doctype html>
-<html>
-  <head>
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.cdnfonts.com/css/lazara" rel="stylesheet" />
-    <script src="main.js"></script>
-  </head>
-  <nav class="navbar">
-    <ul class="nav-list">
-      <li class="nav-item"><button class="nav-button">Home</button></li>
-      <li class="nav-item"><button class="nav-button">About</button></li>
-      <li class="nav-item"><button class="nav-button">Projects</button></li>
-      <li class="nav-item"><button class="nav-button">Blog</button></li>
-      <li class="nav-item"><button class="nav-button">Contact</button></li>
-    </ul>
-  </nav>
-
-  <body>
-    <div class="container">
-      <div class="profile-pic-container">
-        <img src="img/sahil2.jpg" class="profile-pic" id="profile-pic" />
-      </div>
-      <div class="about-me-container">
-        <p class="about-me" id="about-me">
-          Hi :) I'm a computer scientist with a particular appreciation for
-          low-level systems programming, AI engineering, and time-series data.
-          <br /><br />
-          I'm currently a developer at Citadel, where I work in Fixed Income
-          &amp Macro in NYC. I've also worked on High Performance Computing at
-          Citadel Securities, ML/AI Infra at Nuro, and developer experience
-          tooling at Salesforce. I studied at Princeton University and grew up
-          in the Bay Area.<br /><br />
-          In my free time, I play basketball, follow the markets, and cheer on
-          the 49ers.<br /><br />
-          I also really enjoy meeting new people, especially if a cup of coffee
-          is involved.
-        </p>
-      </div>
+---
+layout: default
+title: Sahil Jain
+description: Sahil Jain - Building humanoid robot brains at Tesla AI. Previously quantitative developer at Citadel.
+---
+<div class="container">
+  <div class="profile-pic-container">
+    <img src="{{ '/img/sahil3.png' | relative_url }}" class="profile-pic" alt="Sahil Jain" />
+    <h1 class="name">Sahil Jain</h1>
+    <p class="title">Building humanoid robot brains @ Tesla AI</p>
     </div>
-  </body>
-</html>
+  <div class="about-me-container">
+    <p class="about-me">
+      Hey! I'm currently on the Tesla AI team, where I'm working on world models for Optimus. It's wild getting to work on robots that might actually change how the world works.
+    </p>
+    <p class="about-me">
+      Before this, I was a quantitative developer at <span class="role">Citadel</span> in Fixed Income & Macro, where I got to build systematic trading systems and really fell in love with time-series data. I've also done stints at <span class="role">Citadel Securities</span> working on High Performance Computing, <span class="role">Nuro</span> building ML/AI infrastructure, and <span class="role">Salesforce</span> making developer tools that don't make people want to pull their hair out.
+    </p>
+    <p class="about-me">
+      I studied at Princeton and grew up in the Bay Area. When I'm not staring at code, you'll find me playing basketball, keeping way too many tabs open on market news, or yelling at the TV when the 49ers are playing.
+    </p>
+    <p class="about-me">
+      And (as of January 4th, 2026), I've decided to start writing—which you can read <a href="{{ '/blog' | relative_url }}">here</a>.
+    </p>
+    <p class="about-me">
+      I genuinely love meeting new people—if you're ever in the area and want to grab coffee, hit me up!
+    </p>
+    <div class="social-links">
+      <a href="{{ '/blog' | relative_url }}" aria-label="Blog"><i class="fas fa-pen-to-square"></i></a>
+      <a href="https://github.com/sahiljain01" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sahiljain3" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://x.com/splash_sahil1" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+      <a href="mailto:sahilj@alumni.princeton.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</div>
